@@ -8,14 +8,11 @@
 
 import UIKit
 
-public class WTView : UIView {
+open class WTView : UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        let subviews = createSubviews()
-        subviews.forEach { view in
-            addSubview(view)
-        }
+
+        addSubviews()
         
         commonInit()
     }
@@ -27,11 +24,18 @@ public class WTView : UIView {
     }
     
     
-    public func createSubviews() -> [UIView] {
+    open func createSubviews() -> [UIView] {
         return []
     }
     
-    public func commonInit() {
+    open func commonInit() {
+    }
+    
+    private func addSubviews() {
+        let subviews = createSubviews()
+        subviews.forEach { view in
+            addSubview(view)
+        }
     }
 }
 
