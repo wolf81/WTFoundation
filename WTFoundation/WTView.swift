@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WTView : UIView {
+public class WTView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
