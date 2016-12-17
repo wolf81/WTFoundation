@@ -15,9 +15,10 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.platform              = :ios, "9.0"
+  s.platform              = :ios
   s.name                  = "WTFoundation"
   s.summary               = "A framework to speed up application development."
+  s.ios.deployment_target = '9.0'
 
   s.version               = "0.0.1"
 
@@ -27,7 +28,13 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                  A framework to speed up application development.
+Donec id pharetra risus, in feugiat lectus. 
+Sed gravida libero quis ullamcorper rhoncus. 
+Etiam tincidunt nibh ut dolor consequat gravida. 
+In vel ipsum mollis, sodales ligula in, efficitur eros. 
+Curabitur eu nibh tortor. Nulla augue metus, 
+interdum eget neque ac, posuere ornare turpis. 
+Aenean blandit sodales quam, quis posuere quam fringilla in.
                    DESC
 
   s.homepage     = "https://github.com/wolf81/WTFoundation"
