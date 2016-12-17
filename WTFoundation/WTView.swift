@@ -9,7 +9,7 @@
 import UIKit
 
 public class WTView : UIView {
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         let subviews = createSubviews()
@@ -20,18 +20,18 @@ public class WTView : UIView {
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         commonInit()
     }
     
     
-    func createSubviews() -> [UIView] {
+    public func createSubviews() -> [UIView] {
         return []
     }
     
-    func commonInit() {
+    public func commonInit() {
     }
 }
 
