@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.platform              = :ios, "9.0"
   s.name                  = "WTFoundation"
-  s.summary               = "A short description of WTFoundation."
+  s.summary               = "A framework to speed up application development."
 
   s.version               = "0.0.1"
 
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                  Framework to speed up application development.
                    DESC
 
   s.homepage     = "https://github.com/wolf81/WTFoundation"
@@ -81,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/wolf81/WTFoundation", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/wolf81/WTFoundation.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
