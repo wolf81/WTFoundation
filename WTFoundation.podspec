@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                  Framework to speed up application development.
+                  A framework to speed up application development.
                    DESC
 
   s.homepage     = "https://github.com/wolf81/WTFoundation"
@@ -108,7 +108,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "WTFoundation/**/*.{png,jpeg,jpg,storyboard,xib}"
+  #s.resources = "WTFoundation/**/*.{png,jpeg,jpg,storyboard,xib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
