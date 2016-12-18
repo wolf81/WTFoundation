@@ -500,7 +500,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4136F8750EFCE392A5519239 /* Pods-WTFoundationTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Q97F9KZ3J6;
 				INFOPLIST_FILE = WTFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -514,7 +513,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B555F63390C025EDB0392E73 /* Pods-WTFoundationTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Q97F9KZ3J6;
 				INFOPLIST_FILE = WTFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
