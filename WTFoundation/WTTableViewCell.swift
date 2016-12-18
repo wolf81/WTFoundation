@@ -1,17 +1,17 @@
 //
-//  WTView.swift
+//  WTTableViewCell.swift
 //  WTFoundation
 //
-//  Created by Wolfgang Schreurs on 17/12/2016.
+//  Created by Wolfgang Schreurs on 18/12/2016.
 //  Copyright © 2016 Wolftrail. All rights reserved.
 //
 
 import UIKit
 
-open class WTView : UIView {
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-
+open class WTTableViewCell: UITableViewCell {
+    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         addSubviews()
         
         commonInit()
@@ -22,7 +22,7 @@ open class WTView : UIView {
         
         commonInit()
     }
-    
+
     open func createSubviews() -> [UIView] {
         return []
     }
@@ -39,4 +39,3 @@ open class WTView : UIView {
         }
     }
 }
-

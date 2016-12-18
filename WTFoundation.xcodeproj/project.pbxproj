@@ -13,6 +13,10 @@
 		794D66A51E05EED2009DBDD4 /* WTFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D66A41E05EED2009DBDD4 /* WTFoundationTests.swift */; };
 		794D66A71E05EED2009DBDD4 /* WTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 794D66991E05EED1009DBDD4 /* WTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		794D66B11E05EF05009DBDD4 /* WTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D66B01E05EF05009DBDD4 /* WTView.swift */; };
+		799BA31E1E06FF1900AA0B47 /* WTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA31D1E06FF1900AA0B47 /* WTTableViewCell.swift */; };
+		799BA31F1E06FF1900AA0B47 /* WTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA31D1E06FF1900AA0B47 /* WTTableViewCell.swift */; };
+		799BA3211E07049A00AA0B47 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA3201E07049A00AA0B47 /* UIImageExtensions.swift */; };
+		799BA3221E07049A00AA0B47 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA3201E07049A00AA0B47 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		794D66A41E05EED2009DBDD4 /* WTFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTFoundationTests.swift; sourceTree = "<group>"; };
 		794D66A61E05EED2009DBDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794D66B01E05EF05009DBDD4 /* WTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTView.swift; sourceTree = "<group>"; };
+		799BA31D1E06FF1900AA0B47 /* WTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTableViewCell.swift; sourceTree = "<group>"; };
+		799BA3201E07049A00AA0B47 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		B555F63390C025EDB0392E73 /* Pods-WTFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTFoundationTests/Pods-WTFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,8 @@
 				794D66991E05EED1009DBDD4 /* WTFoundation.h */,
 				794D669A1E05EED1009DBDD4 /* Info.plist */,
 				794D66B01E05EF05009DBDD4 /* WTView.swift */,
+				799BA31D1E06FF1900AA0B47 /* WTTableViewCell.swift */,
+				799BA3201E07049A00AA0B47 /* UIImageExtensions.swift */,
 			);
 			path = WTFoundation;
 			sourceTree = "<group>";
@@ -317,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799BA3211E07049A00AA0B47 /* UIImageExtensions.swift in Sources */,
+				799BA31E1E06FF1900AA0B47 /* WTTableViewCell.swift in Sources */,
 				794D66B11E05EF05009DBDD4 /* WTView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799BA3221E07049A00AA0B47 /* UIImageExtensions.swift in Sources */,
+				799BA31F1E06FF1900AA0B47 /* WTTableViewCell.swift in Sources */,
 				794D66A51E05EED2009DBDD4 /* WTFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
