@@ -12,11 +12,11 @@ open class WTErrorView: WTView {
     let errorLabel = UILabel()
     let reloadButton = UIButton()
     
-    override func createSubviews() -> [UIView] {
+    override open func createSubviews() -> [UIView] {
         return [self.errorLabel, self.reloadButton]
     }
     
-    override func commonInit() {
+    override open func commonInit() {
         super.commonInit()
         
         self.errorLabel.textColor = .black
@@ -27,7 +27,7 @@ open class WTErrorView: WTView {
         self.reloadButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         let bounds = self.bounds
