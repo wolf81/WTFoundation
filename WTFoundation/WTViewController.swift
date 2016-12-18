@@ -17,15 +17,15 @@ public enum WTViewState {
 open class WTViewController: UIViewController {
     // TODO: consider using an interface for loading view and error view to allow for more flexibility.
     
-    private(set) var contentView: UIView = {
+    public var contentView: UIView = {
         return UIView()
     }()
     
-    private(set) var loadingView: WTLoadingView = {
+    public var loadingView: WTLoadingView = {
         return WTLoadingView()
     }()
     
-    private(set) var errorView: WTErrorView = {
+    public var errorView: WTErrorView = {
         return WTErrorView()
     }()
     

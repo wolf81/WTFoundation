@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WTErrorView: WTView {
+open class WTErrorView: WTView {
     let errorLabel = UILabel()
     let reloadButton = UIButton()
     
