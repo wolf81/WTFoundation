@@ -35,7 +35,7 @@ open class WTTableViewCell: UITableViewCell {
     private func addSubviews() {
         let subviews = createSubviews()
         subviews.forEach { view in
-            addSubview(view)
+            self.contentView.addSubview(view)
         }
     }
 }
