@@ -20,6 +20,7 @@
 		799BA32A1E072EAC00AA0B47 /* WTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA3291E072EAC00AA0B47 /* WTViewController.swift */; };
 		799BA32D1E072EBD00AA0B47 /* WTErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA32B1E072EBD00AA0B47 /* WTErrorView.swift */; };
 		799BA32E1E072EBD00AA0B47 /* WTLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA32C1E072EBD00AA0B47 /* WTLoadingView.swift */; };
+		799BA33A1E08A2EF00AA0B47 /* WTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BA3391E08A2EF00AA0B47 /* WTTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		799BA3291E072EAC00AA0B47 /* WTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTViewController.swift; sourceTree = "<group>"; };
 		799BA32B1E072EBD00AA0B47 /* WTErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTErrorView.swift; sourceTree = "<group>"; };
 		799BA32C1E072EBD00AA0B47 /* WTLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLoadingView.swift; sourceTree = "<group>"; };
+		799BA3391E08A2EF00AA0B47 /* WTTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTableViewController.swift; sourceTree = "<group>"; };
 		B555F63390C025EDB0392E73 /* Pods-WTFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTFoundationTests/Pods-WTFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 		799BA3301E07301200AA0B47 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				799BA3391E08A2EF00AA0B47 /* WTTableViewController.swift */,
 				799BA3291E072EAC00AA0B47 /* WTViewController.swift */,
 				794D66B01E05EF05009DBDD4 /* WTView.swift */,
 				799BA31D1E06FF1900AA0B47 /* WTTableViewCell.swift */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799BA32D1E072EBD00AA0B47 /* WTErrorView.swift in Sources */,
+				799BA33A1E08A2EF00AA0B47 /* WTTableViewController.swift in Sources */,
 				799BA3211E07049A00AA0B47 /* UIImageExtensions.swift in Sources */,
 				799BA31E1E06FF1900AA0B47 /* WTTableViewCell.swift in Sources */,
 				794D66B11E05EF05009DBDD4 /* WTView.swift in Sources */,
