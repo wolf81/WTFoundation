@@ -11,7 +11,7 @@ import UIKit
 open class WTTableViewController: WTViewController {
     open var tableView: UITableView
     
-    override init() {
+    override public init() {
         self.tableView = UITableView()
 
         super.init()
