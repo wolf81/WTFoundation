@@ -15,25 +15,34 @@ public enum WTViewState {
 }
 
 open class WTViewController: UIViewController {
-    // TODO: consider using an interface for loading view and error view to allow for more flexibility.
+    // Any subviews should be added to self.contentView, don't add subviews to self.view.
+    open let contentView = UIView()
     
-    open lazy var contentView: UIView = {
-        return UIView()
-    }()
-    
-    open lazy var loadingView: WTLoadingView = {
-        return WTLoadingView()
-    }()
-    
-    open lazy var errorView: WTErrorView = {
-        return WTErrorView()
-    }()
+    // Overridable in subclasses.
+    open var loadingView: WTLoadingView
+    open var errorView: WTErrorView
     
     private(set) var viewState: WTViewState = .loaded {
         didSet {
             updateForViewState()
         }
     }
+
+    // MARK: - Constructors
+    
+    public init() {
+        self.loadingView = WTLoadingView()
+        self.errorView = WTErrorView()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        self.loadingView = WTLoadingView()
+        self.errorView = WTErrorView()
+        super.init(coder: aDecoder)
+    }
+    
+    // MARK: - View lifecycle
 
     override open func viewDidLoad() {
         super.viewDidLoad()
