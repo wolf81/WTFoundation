@@ -52,6 +52,8 @@ open class WTViewController: UIViewController {
         self.view.addSubview(self.errorView)
         
         self.errorView.delegate = self
+        
+        loadData()
     }
     
     override open func viewWillLayoutSubviews() {
@@ -64,8 +66,6 @@ open class WTViewController: UIViewController {
     
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        loadData()
     }
 
     // MARK: - Public

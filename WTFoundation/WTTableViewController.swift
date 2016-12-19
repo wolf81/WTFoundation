@@ -27,6 +27,7 @@ open class WTTableViewController: WTViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         
         self.contentView.addSubview(self.tableView)
     }
