@@ -19,7 +19,7 @@ open class WTView : UIView {
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+     
         commonInit()
     }
     
@@ -28,6 +28,7 @@ open class WTView : UIView {
     }
     
     open func commonInit() {
+        self.backgroundColor = .white
     }
     
     // MARK: - Private

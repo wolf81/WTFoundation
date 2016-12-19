@@ -50,6 +50,8 @@ open class WTViewController: UIViewController {
         self.view.addSubview(self.contentView)
         self.view.addSubview(self.loadingView)
         self.view.addSubview(self.errorView)
+        
+        self.errorView.delegate = self
     }
     
     override open func viewWillLayoutSubviews() {
@@ -63,11 +65,7 @@ open class WTViewController: UIViewController {
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let initialState = loadData { endState in
-            self.viewState = endState
-        }
-        
-        self.viewState = initialState
+        loadData()
     }
 
     // MARK: - Public
@@ -77,6 +75,14 @@ open class WTViewController: UIViewController {
     }
     
     // MARK: - Private
+    
+    fileprivate func loadData() {
+        let initialState = loadData { endState in
+            self.viewState = endState
+        }
+        
+        self.viewState = initialState
+    }
     
     private func updateForViewState() {
         var updateBlock = {}
@@ -111,5 +117,11 @@ open class WTViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 0.5, animations: updateBlock)
+    }
+}
+
+extension WTViewController: WTErrorViewDelegate {
+    public func errorViewReloadAction(view: WTErrorView) {
+        loadData()
     }
 }

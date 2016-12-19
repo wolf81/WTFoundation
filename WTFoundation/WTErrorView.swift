@@ -8,10 +8,20 @@
 
 import UIKit
 
+public protocol WTErrorViewDelegate: class {
+    func errorViewReloadAction(view: WTErrorView)
+}
+
+fileprivate extension Selector {
+    static let reloadButtonTouchedUpInside = #selector(WTErrorView.reloadButtonTouchUpInside(_:))
+}
+
 open class WTErrorView: WTView {
-    let errorLabel = UILabel()
-    let reloadButton = UIButton()
+    private var errorLabel = UILabel()
+    private var reloadButton = UIButton()
     
+    weak open var delegate: WTErrorViewDelegate?
+
     override open func createSubviews() -> [UIView] {
         return [self.errorLabel, self.reloadButton]
     }
@@ -25,7 +35,10 @@ open class WTErrorView: WTView {
         self.reloadButton.setTitle("Reload", for: .normal)
         self.reloadButton.setTitleColor(.black, for: .normal)
         self.reloadButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        self.reloadButton.addTarget(self, action: .reloadButtonTouchedUpInside, for: .touchUpInside)
     }
+    
+    // MARK: - Layout
     
     override open func layoutSubviews() {
         super.layoutSubviews()
@@ -47,8 +60,14 @@ open class WTErrorView: WTView {
     
     // MARK: - Public
     
-    public func configure(error: Error) {
+    open func configure(error: Error) {
         self.errorLabel.text = error.localizedDescription
         setNeedsLayout()
+    }
+    
+    // MARK: - Private
+    
+    @objc fileprivate func reloadButtonTouchUpInside(_: UIButton) {
+        self.delegate?.errorViewReloadAction(view: self)
     }
 }
